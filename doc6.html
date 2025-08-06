@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered uppercase heading</title>
+    <style>
+        .centered-heading{
+            text-align: center;
+            text-transform: capitalize;
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+    <style>
+        #outer{
+            text-align: center;
+            font: size 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            line-height: 0cm;
+        }
+        #inner{
+            text-align: center;
+            font-size: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="centered-heading">This is centered heading</h1>
+    <div id="outer" text="outer">This is outer div.
+        <div id="inner" text="inner">
+            This is inner div.
+        </div>
+    </div>
+</body>
+</html>
