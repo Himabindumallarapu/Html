@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation properties</title>
+    <style>
+        .item{
+            height:40px;
+            width:25px;
+            background-color: blueviolet;
+            animation-name: top;
+            animation-duration: 8s;
+            animation-iteration-count: 3;
+            animation-direction: alternate-reverse;
+            animation-delay: 2s;
+        }
+        @keyframes top{
+            0%{
+                background-color: brown;
+                transform: scaleX(0.5);
+            }
+            50%{
+                border-radius: 50%;
+            }
+            100%{
+                transform: translate(400px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="item"></div>
+</body>
+</html>
